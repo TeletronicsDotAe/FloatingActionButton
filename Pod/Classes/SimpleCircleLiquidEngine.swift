@@ -52,7 +52,7 @@ class SimpleCircleLiquidEngine {
         let pathBounds = CGPathGetBoundingBox(path.CGPath);
 
         let shape = CAShapeLayer()
-        shape.fillColor = self.color.CGColor
+        shape.fillColor = UIColor.purpleColor().CGColor // self.color.CGColor
         shape.path = path.CGPath
         shape.frame = CGRect(x: 0, y: 0, width: pathBounds.width, height: pathBounds.height)
         

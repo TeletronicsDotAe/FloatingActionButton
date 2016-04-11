@@ -366,18 +366,18 @@ class CircleLiquidBaseView : ActionBarBaseView {
         for i in 0..<openingCells.count {
             let liquidCell = openingCells[i]
             let cellDelay = CGFloat(delay) * CGFloat(i)
-            let ratio = easeInEaseOut((t - cellDelay) / duration)
+            let ratio: CGFloat = easeInEaseOut(1.5) //easeInEaseOut((t - cellDelay) / duration)
             f(liquidCell, i, ratio)
         }
 
-        if let firstCell = openingCells.first {
-            bigEngine?.push(baseLiquid!, other: firstCell)
-        }
-        for i in 1..<openingCells.count {
-            let prev = openingCells[i - 1]
-            let cell = openingCells[i]
-            engine?.push(prev, other: cell)
-        }
+//        if let firstCell = openingCells.first {
+//            bigEngine?.push(baseLiquid!, other: firstCell)
+//        }
+//        for i in 1..<openingCells.count {
+//            let prev = openingCells[i - 1]
+//            let cell = openingCells[i]
+//            engine?.push(prev, other: cell)
+//        }
         engine?.draw(baseLiquid!)
         bigEngine?.draw(baseLiquid!)
     }
@@ -385,7 +385,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     func updateOpen() {
         update(0.1, duration: openDuration) { cell, i, ratio in
             let posRatio = ratio > CGFloat(i) / CGFloat(self.openingCells.count) ? ratio : 0
-            let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * posRatio
+            let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.2) * posRatio
             cell.center = self.center.plus(self.differencePoint(distance))
             cell.update(ratio, open: true)
         }
@@ -393,7 +393,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
     
     func updateClose() {
         update(0, duration: closeDuration) { cell, i, ratio in
-            let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.5) * (1 - ratio)
+            let distance = (cell.frame.height * 0.5 + CGFloat(i + 1) * cell.frame.height * 1.2) * (1 - ratio)
             cell.center = self.center.plus(self.differencePoint(distance))
             cell.update(ratio, open: false)
         }

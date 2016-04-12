@@ -317,7 +317,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         opening = true
         for cell in cells {
             cell.layer.removeAllAnimations()
-            cell.layer.eraseShadow()
+//            cell.layer.eraseShadow()
             openingCells.append(cell)
         }
     }
@@ -329,7 +329,7 @@ class CircleLiquidBaseView : ActionBarBaseView {
         displayLink?.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
         for cell in cells {
             cell.layer.removeAllAnimations()
-            cell.layer.eraseShadow()
+//            cell.layer.eraseShadow()
             openingCells.append(cell)
             cell.userInteractionEnabled = false
         }

@@ -80,11 +80,14 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         let createButton: (CGRect, LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton = { (frame, style) in
             let floatingActionButton = CustomDrawingActionButton(frame: frame)
             floatingActionButton.animateStyle = style
+            floatingActionButton.childControlsColor = UIColor.whiteColor();
+            floatingActionButton.childControlsTintColor = UIColor.darkGrayColor();
+            floatingActionButton.childControlsTintColor = UIColor.blackColor()
             floatingActionButton.dataSource = self
             floatingActionButton.delegate = self
             return floatingActionButton
         }
-        
+
         let cellFactory: (String) -> LiquidFloatingCell = { (iconName) in
             let cell = LiquidFloatingCell(icon: UIImage(named: iconName)!)
             return cell

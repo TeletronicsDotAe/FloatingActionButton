@@ -58,9 +58,15 @@ public class LiquidFloatingActionButton: UIView {
 
     @IBInspectable public var color: UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0) {
         didSet {
+            if self.childControlsColor == baseView.color {
+                self.childControlsColor = color
+            }
             baseView.color = color
         }
     }
+    
+    @IBInspectable public var childControlsColor: UIKit.UIColor = UIColor(red: 82 / 255.0, green: 112 / 255.0, blue: 235 / 255.0, alpha: 1.0)
+    @IBInspectable public var childControlsTintColor: UIKit.UIColor = UIKit.UIColor.clearColor();
 
     @IBInspectable public var image: UIImage? {
         didSet {
@@ -92,7 +98,10 @@ public class LiquidFloatingActionButton: UIView {
     }
 
     private func insertCell(cell: LiquidFloatingCell) {
-        cell.color = self.color
+        
+        cell.color = self.childControlsColor;
+        cell.imageView.tintColor = self.childControlsTintColor;
+
         cell.radius = self.frame.width * cellRadiusRatio
         cell.center = self.center.minus(self.frame.origin)
         cell.actionButton = self
@@ -319,7 +328,7 @@ class CircleLiquidBaseView: ActionBarBaseView {
         opening = true
         for cell in cells {
             cell.layer.removeAllAnimations()
-//            cell.layer.eraseShadow()
+            cell.layer.appendShadow()
             openingCells.append(cell)
         }
     }
@@ -425,11 +434,6 @@ class CircleLiquidBaseView: ActionBarBaseView {
     }
 
     func stop() {
-        for cell in openingCells {
-            if enableShadow {
-                cell.layer.appendShadow()
-            }
-        }
         openingCells = []
         keyDuration = 0
         displayLink?.invalidate()

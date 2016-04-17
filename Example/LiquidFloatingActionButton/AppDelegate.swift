@@ -1,7 +1,10 @@
 //
 //  AppDelegate.swift
-//  LiquidFloatingActionButton
+//  FloatingActionButton
 //
+//  Adapted by Martin Jacon Rehder on 2016/04/17
+//
+//  Original by
 //  Created by Takuma Yoshida on 08/25/2015.
 //  Copyright (c) 2015 Takuma Yoshida. All rights reserved.
 //

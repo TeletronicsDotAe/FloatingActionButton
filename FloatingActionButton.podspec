@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint LiquidFloatingActionButton.podspec' to ensure this is a
+# Be sure to run `pod lib lint FloatingActionButton.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "LiquidFloatingActionButton"
-  s.version          = "0.1.1"
-  s.summary          = "Material Design Floating Action Button in liquid state"
+  s.name             = "FloatingActionButton"
+  s.version          = "0.2.0"
+  s.summary          = "Material Design Floating Action Button"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,13 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
                       Material Design Floating Action Button in liquid state inspired by http://www.materialup.com/posts/material-in-a-liquid-state
+                        Floating Action Button adapted from LiquidFloatingActionButton from https://github.com/yoavlt/LiquidFloatingActionButton
                        DESC
 
-  s.homepage         = "https://github.com/yoavlt/LiquidFloatingActionButton"
+  s.homepage         = "https://github.com/TeletronicsDotAe/FloatingActionButton"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Takuma Yoshida" => "yoa.jmpr.w@gmail.com" }
-  s.source           = { :git => "https://github.com/yoavlt/LiquidFloatingActionButton.git", :tag => s.version.to_s }
+  s.author           = { "Martin Jacob Rehder" }
+  s.source           = { :git => "https://github.com/TeletronicsDotAe/FloatingActionButton.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
@@ -32,7 +33,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'LiquidFloatingActionButton' => ['Pod/Assets/*.png']
+    'FloatingActionButton' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

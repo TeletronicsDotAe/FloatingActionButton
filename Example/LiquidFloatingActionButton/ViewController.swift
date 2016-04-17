@@ -1,6 +1,9 @@
 //
 //  ViewController.swift
-//  LiquidFloatingActionButton
+//  FloatingActionButton
+//  Adapted by Martin Jacon Rehder on 2016/04/17
+//
+//  Original by
 //
 //  Created by Takuma Yoshida on 08/25/2015.
 //  Copyright (c) 2015 Takuma Yoshida. All rights reserved.
@@ -10,7 +13,7 @@ import UIKit
 import SnapKit
 import LiquidFloatingActionButton
 
-public class CustomCell : LiquidFloatingCell {
+public class CustomCell : FloatingCell {
     var name: String = "sample"
     
     init(icon: UIImage, name: String) {
@@ -37,7 +40,7 @@ public class CustomCell : LiquidFloatingCell {
     }
 }
 
-public class CustomDrawingActionButton: LiquidFloatingActionButton {
+public class CustomDrawingActionButton: FloatingActionButton {
     
     override public func createPlusLayer(frame: CGRect) -> CAShapeLayer {
         
@@ -67,17 +70,16 @@ public class CustomDrawingActionButton: LiquidFloatingActionButton {
     }
 }
 
-class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, LiquidFloatingActionButtonDelegate {
+class ViewController: UIViewController, FloatingActionButtonDataSource, FloatingActionButtonDelegate {
     
-    var cells: [LiquidFloatingCell] = []
-    var floatingActionButton: LiquidFloatingActionButton!
+    var cells: [FloatingCell] = []
+    var floatingActionButton: FloatingActionButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.view.backgroundColor = UIColor(red: 55 / 255.0, green: 55 / 255.0, blue: 55 / 255.0, alpha: 1.0)
         // Do any additional setup after loading the view, typically from a nib.
-        let createButton: (CGRect, LiquidFloatingActionButtonAnimateStyle) -> LiquidFloatingActionButton = { (frame, style) in
+        let createButton: (CGRect, FloatingActionButtonAnimateStyle) -> FloatingActionButton = { (frame, style) in
             let floatingActionButton = CustomDrawingActionButton(frame: frame)
             floatingActionButton.animateStyle = style
             floatingActionButton.childControlsColor = UIColor.whiteColor();
@@ -88,11 +90,11 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
             return floatingActionButton
         }
 
-        let cellFactory: (String) -> LiquidFloatingCell = { (iconName) in
-            let cell = LiquidFloatingCell(icon: UIImage(named: iconName)!)
+        let cellFactory: (String) -> FloatingCell = { (iconName) in
+            let cell = FloatingCell(icon: UIImage(named: iconName)!)
             return cell
         }
-        let customCellFactory: (String) -> LiquidFloatingCell = { (iconName) in
+        let customCellFactory: (String) -> FloatingCell = { (iconName) in
             let cell = CustomCell(icon: UIImage(named: iconName)!, name: iconName)
             return cell
         }
@@ -118,17 +120,17 @@ class ViewController: UIViewController, LiquidFloatingActionButtonDataSource, Li
         // Dispose of any resources that can be recreated.
     }
 
-    func numberOfCells(liquidFloatingActionButton: LiquidFloatingActionButton) -> Int {
+    func numberOfCells(floatingActionButton: FloatingActionButton) -> Int {
         return cells.count
     }
     
-    func cellForIndex(index: Int) -> LiquidFloatingCell {
+    func cellForIndex(index: Int) -> FloatingCell {
         return cells[index]
     }
     
-    func liquidFloatingActionButton(liquidFloatingActionButton: LiquidFloatingActionButton, didSelectItemAtIndex index: Int) {
+    func liquidFloatingActionButton(floatingActionButton: FloatingActionButton, didSelectItemAtIndex index: Int) {
         print("did Tapped! \(index)")
-        liquidFloatingActionButton.close()
+        floatingActionButton.close()
     }
 
 }

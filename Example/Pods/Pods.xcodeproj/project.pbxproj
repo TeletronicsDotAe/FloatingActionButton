@@ -12,15 +12,16 @@
 		27265ED50FB0F70B0DC6CACFEBFEFEBB /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8D96BACF73B0930447045AF580F1F64 /* UIColorEx.swift */; };
 		2779506876997B329DBA24C5C89E0741 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 079E5EE3CDB090004C84E658BC83AEB7 /* SnapKit-dummy.m */; };
 		2FB98EB28FD690835891F30F8D410080 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA1CFBED61FB63BBC905CD3AFEE402C /* SnapKit.swift */; };
-		2FD62186877ED8D79EB50BE978326AB7 /* LiquidUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D691EE87C404B7D086624B5801982F43 /* LiquidUtil.swift */; };
+		2FD62186877ED8D79EB50BE978326AB7 /* FloatingActionButtonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = D691EE87C404B7D086624B5801982F43 /* FloatingActionButtonUtil.swift */; };
 		3119F291AB6588F10BE54351505CD5FD /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DD83C2BF9A16815558CBFACD79C938 /* ConstraintRelation.swift */; };
 		54218C3D297E6E992720394B1904DFA8 /* LiquidFloatingActionButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C7159C06470D006C424DDC8A1A60EB /* LiquidFloatingActionButton-dummy.m */; };
+		5B5BAB081CC37C3B006F6634 /* FloatingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5BAB071CC37C3A006F6634 /* FloatingCell.swift */; };
 		5D7F2067317C172EA89627DBE45044BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		5FC1075233F230CAF3206BC8967896BF /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A877C5C14A8B495ECAB69BE839FFA44 /* ViewController+SnapKit.swift */; };
 		72042359B6606B6363E495430D780479 /* LiquidFloatingActionButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4A9330A77EB8489F3F2B7006FF342821 /* LiquidFloatingActionButton.bundle */; };
 		73A598302FF7775E6E0FBB231B416F61 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C745F502C842A223464EC61885F02BB /* Constraint.swift */; };
 		7C4A7782F2A3F28C5A5E5C751406E528 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		82D7A27B0B5695343FBA27D55E308716 /* LiquidFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC495A087C2EAF9CAAC87835CAA680 /* LiquidFloatingActionButton.swift */; };
+		82D7A27B0B5695343FBA27D55E308716 /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AC495A087C2EAF9CAAC87835CAA680 /* FloatingActionButton.swift */; };
 		880A142C73ADFAC66E12A00A6D461281 /* Pods-LiquidFloatingActionButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F42031AA343001A7E2C8D3D69C9DE2 /* Pods-LiquidFloatingActionButton_Example-dummy.m */; };
 		8AE68AF11C742B3DFB12B8426C53FAE0 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */; };
 		91A0B0D5F700489F625FA80CF9E414B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
@@ -28,8 +29,7 @@
 		A516196B52C6812BD20B203BA789924F /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */; };
 		A63823259878C902D4734D9B3813BAC8 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415D45FAC3D162C8D3F9CFE592F79E42 /* Debugging.swift */; };
 		ABEE259770118A74E19D8E6FFCC3B54D /* CGPointEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369689EDAB3FAFC4E5BB39A93321BBFC /* CGPointEx.swift */; };
-		B95FC4D5CA4A1AB1B9ACC0FB060B3DDF /* SimpleCircleLiquidEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B69218901BE4E025D721BBC5CC763A /* SimpleCircleLiquidEngine.swift */; };
-		C4B49BC88CE5107F310F24520E2B936F /* LiquittableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF44DB2E216127955F1E0FEF8213369 /* LiquittableCircle.swift */; };
+		C4B49BC88CE5107F310F24520E2B936F /* FloatingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF44DB2E216127955F1E0FEF8213369 /* FloatingCircle.swift */; };
 		CA51F12534784E92F1EF5A82424E3F15 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 17ED37A4D4337C9AC445D07BA9E09051 /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC6DC5A0FFFD9F4BB16D4B11F8769E6C /* ArrayEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC4A98C58F1EBAF09C8E193E73E985 /* ArrayEx.swift */; };
 		CD635561809D218A952928FCA3BC1B78 /* LiquidFloatingActionButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 824CA79EC009B18484863834998CC017 /* LiquidFloatingActionButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -97,6 +97,7 @@
 		55BB547CA6D4862CCE70A4B51F1EABAE /* View+SnapKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "View+SnapKit.swift"; path = "Source/View+SnapKit.swift"; sourceTree = "<group>"; };
 		56B1FCA085C2AC4CDCEB52E3588F26EB /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SnapKit.modulemap; sourceTree = "<group>"; };
 		58C7159C06470D006C424DDC8A1A60EB /* LiquidFloatingActionButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LiquidFloatingActionButton-dummy.m"; sourceTree = "<group>"; };
+		5B5BAB071CC37C3A006F6634 /* FloatingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingCell.swift; sourceTree = "<group>"; };
 		5B850A0AE5BE721D248F258FB455C96E /* LiquidFloatingActionButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-prefix.pch"; sourceTree = "<group>"; };
 		63AA079CA68C8594DE2EFCEECD70391B /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6BEAD485B9DC8B38EBDE94D6A091FDB6 /* CGRectEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CGRectEx.swift; sourceTree = "<group>"; };
@@ -104,7 +105,7 @@
 		7BD5E598A90E9B5D7F5BE26DD5C7B6D6 /* Pods-LiquidFloatingActionButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Tests-resources.sh"; sourceTree = "<group>"; };
 		824CA79EC009B18484863834998CC017 /* LiquidFloatingActionButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LiquidFloatingActionButton-umbrella.h"; sourceTree = "<group>"; };
 		82BC29399E8CB5DE4082F0C18B2BA3DC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83AC495A087C2EAF9CAAC87835CAA680 /* LiquidFloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidFloatingActionButton.swift; sourceTree = "<group>"; };
+		83AC495A087C2EAF9CAAC87835CAA680 /* FloatingActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		8CAC4A98C58F1EBAF09C8E193E73E985 /* ArrayEx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ArrayEx.swift; sourceTree = "<group>"; };
 		8DB80E76EE113421A98CB8EE23DE90D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EF67744D713AB87F9A34356FCB4C593 /* Pods-LiquidFloatingActionButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LiquidFloatingActionButton_Tests.modulemap"; sourceTree = "<group>"; };
@@ -123,12 +124,11 @@
 		B80DBE465AE8ED339A23BA7027E83E9C /* Pods-LiquidFloatingActionButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LiquidFloatingActionButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B869919EAC3B1E5EF05B0107B595C13C /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BAF44DB2E216127955F1E0FEF8213369 /* LiquittableCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquittableCircle.swift; sourceTree = "<group>"; };
+		BAF44DB2E216127955F1E0FEF8213369 /* FloatingCircle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingCircle.swift; sourceTree = "<group>"; };
 		D2E296184E24EBA83C604214BE7B30AF /* Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LiquidFloatingActionButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D691EE87C404B7D086624B5801982F43 /* LiquidUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LiquidUtil.swift; sourceTree = "<group>"; };
+		D691EE87C404B7D086624B5801982F43 /* FloatingActionButtonUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatingActionButtonUtil.swift; sourceTree = "<group>"; };
 		DEFB846E6A499B21514C1E298F56DE3B /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		E365F5D85C8B589E45B7CA5165A49929 /* Pods-LiquidFloatingActionButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LiquidFloatingActionButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E3B69218901BE4E025D721BBC5CC763A /* SimpleCircleLiquidEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleCircleLiquidEngine.swift; sourceTree = "<group>"; };
 		E7ED5648C0C88C2BBB8B1737D3C811DF /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		E830ACF61E27A06FCCA26909BF0C8F54 /* Pods_LiquidFloatingActionButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiquidFloatingActionButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9A5015EB0DACCD8DC713FB792DD43C5 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,7 +193,7 @@
 		2B483F03EA79C3C9DDEEF7DB0181AFC0 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AE2F18FBC8136A267123CC803D2C583B /* LiquidFloatingActionButton */,
+				AE2F18FBC8136A267123CC803D2C583B /* FloatingActionButton */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -230,11 +230,11 @@
 				8CAC4A98C58F1EBAF09C8E193E73E985 /* ArrayEx.swift */,
 				369689EDAB3FAFC4E5BB39A93321BBFC /* CGPointEx.swift */,
 				6BEAD485B9DC8B38EBDE94D6A091FDB6 /* CGRectEx.swift */,
-				83AC495A087C2EAF9CAAC87835CAA680 /* LiquidFloatingActionButton.swift */,
-				D691EE87C404B7D086624B5801982F43 /* LiquidUtil.swift */,
-				BAF44DB2E216127955F1E0FEF8213369 /* LiquittableCircle.swift */,
-				E3B69218901BE4E025D721BBC5CC763A /* SimpleCircleLiquidEngine.swift */,
+				83AC495A087C2EAF9CAAC87835CAA680 /* FloatingActionButton.swift */,
+				D691EE87C404B7D086624B5801982F43 /* FloatingActionButtonUtil.swift */,
+				BAF44DB2E216127955F1E0FEF8213369 /* FloatingCircle.swift */,
 				A8D96BACF73B0930447045AF580F1F64 /* UIColorEx.swift */,
+				5B5BAB071CC37C3A006F6634 /* FloatingCell.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -247,13 +247,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		AE2F18FBC8136A267123CC803D2C583B /* LiquidFloatingActionButton */ = {
+		AE2F18FBC8136A267123CC803D2C583B /* FloatingActionButton */ = {
 			isa = PBXGroup;
 			children = (
 				F49E6C75BCE430958DB1CC52D1914458 /* Pod */,
 				D401308214B3B3372E1C579337305FF5 /* Support Files */,
 			);
-			name = LiquidFloatingActionButton;
+			name = FloatingActionButton;
 			path = ../..;
 			sourceTree = "<group>";
 		};
@@ -544,11 +544,11 @@
 				CC6DC5A0FFFD9F4BB16D4B11F8769E6C /* ArrayEx.swift in Sources */,
 				ABEE259770118A74E19D8E6FFCC3B54D /* CGPointEx.swift in Sources */,
 				E9F9849609338D0B86CEBA5240071741 /* CGRectEx.swift in Sources */,
+				5B5BAB081CC37C3B006F6634 /* FloatingCell.swift in Sources */,
 				54218C3D297E6E992720394B1904DFA8 /* LiquidFloatingActionButton-dummy.m in Sources */,
-				82D7A27B0B5695343FBA27D55E308716 /* LiquidFloatingActionButton.swift in Sources */,
-				2FD62186877ED8D79EB50BE978326AB7 /* LiquidUtil.swift in Sources */,
-				C4B49BC88CE5107F310F24520E2B936F /* LiquittableCircle.swift in Sources */,
-				B95FC4D5CA4A1AB1B9ACC0FB060B3DDF /* SimpleCircleLiquidEngine.swift in Sources */,
+				82D7A27B0B5695343FBA27D55E308716 /* FloatingActionButton.swift in Sources */,
+				2FD62186877ED8D79EB50BE978326AB7 /* FloatingActionButtonUtil.swift in Sources */,
+				C4B49BC88CE5107F310F24520E2B936F /* FloatingCircle.swift in Sources */,
 				27265ED50FB0F70B0DC6CACFEBFEFEBB /* UIColorEx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

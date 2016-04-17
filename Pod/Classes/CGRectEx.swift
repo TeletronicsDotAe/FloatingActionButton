@@ -1,7 +1,9 @@
 //
 //  CGRectEx.swift
-//  LiquidLoading
 //
+//  Adapted by Martin Jacon Rehder on 2016/04/17
+//
+//  Original by
 //  Created by Takuma Yoshida on 2015/08/20.
 //  Copyright (c) 2015年 yoavlt. All rights reserved.
 //

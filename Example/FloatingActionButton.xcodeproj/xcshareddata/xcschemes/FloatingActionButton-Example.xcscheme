@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "LiquidFloatingActionButton_Example.app"
-               BlueprintName = "LiquidFloatingActionButton_Example"
-               ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
+               BuildableName = "FloatingActionButton_Example.app"
+               BlueprintName = "FloatingActionButton_Example"
+               ReferencedContainer = "container:FloatingActionButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "LiquidFloatingActionButton_Tests.xctest"
-               BlueprintName = "LiquidFloatingActionButton_Tests"
-               ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
+               BuildableName = "FloatingActionButton_Example.xctest"
+               BlueprintName = "FloatingActionButton_Tests"
+               ReferencedContainer = "container:FloatingActionButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "LiquidFloatingActionButton_Tests.xctest"
-               BlueprintName = "LiquidFloatingActionButton_Tests"
-               ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
+               BuildableName = "FloatingActionButton_Example.xctest"
+               BlueprintName = "FloatingActionButton_Tests"
+               ReferencedContainer = "container:FloatingActionButton.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "LiquidFloatingActionButton_Example.app"
-            BlueprintName = "LiquidFloatingActionButton_Example"
-            ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
+            BuildableName = "FloatingActionButton_Example.app"
+            BlueprintName = "FloatingActionButton_Example"
+            ReferencedContainer = "container:FloatingActionButton.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "LiquidFloatingActionButton_Example.app"
-            BlueprintName = "LiquidFloatingActionButton_Example"
-            ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
+            BuildableName = "FloatingActionButton_Example.app"
+            BlueprintName = "FloatingActionButton_Example"
+            ReferencedContainer = "container:FloatingActionButton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -99,9 +99,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "LiquidFloatingActionButton_Example.app"
-            BlueprintName = "LiquidFloatingActionButton_Example"
-            ReferencedContainer = "container:LiquidFloatingActionButton.xcodeproj">
+            BuildableName = "FloatingActionButton_Example.app"
+            BlueprintName = "FloatingActionButton_Example"
+            ReferencedContainer = "container:FloatingActionButton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

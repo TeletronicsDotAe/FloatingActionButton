@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import LiquidFloatingActionButton
+import FloatingActionButton
 
 class Tests: XCTestCase {
     

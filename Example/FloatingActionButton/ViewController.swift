@@ -11,7 +11,7 @@
 
 import UIKit
 import SnapKit
-import LiquidFloatingActionButton
+import FloatingActionButton
 
 public class CustomCell : FloatingCell {
     var name: String = "sample"

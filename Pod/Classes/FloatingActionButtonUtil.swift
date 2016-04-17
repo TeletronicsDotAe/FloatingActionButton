@@ -1,6 +1,6 @@
 //
 //  FloatingActionButtonUtil.swift
-//  Adapted by Martin Jacon Rehder on 2016/04/17
+//  Adapted by Martin Jacob Rehder on 2016/04/17
 //
 //  Original by
 //  Created by Takuma Yoshida on 2015/08/17.

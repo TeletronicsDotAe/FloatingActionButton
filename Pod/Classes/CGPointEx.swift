@@ -1,6 +1,6 @@
 //
 //  CGPointEx.swift
-//  Adapted by Martin Jacon Rehder on 2016/04/17
+//  Adapted by Martin Jacob Rehder on 2016/04/17
 //
 //  Original by
 //

@@ -133,7 +133,7 @@ internal struct ConstraintAttributes: OptionSetType, BooleanType {
             #if swift(>=2.3)
             attrs.append(.LastBaseline)
             #else
-            attrs.append(.Baseline)
+            attrs.append(.LastBaseline)
             #endif
         }
         

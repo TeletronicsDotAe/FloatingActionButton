@@ -1,19 +1,19 @@
 PODS:
-  - FloatingActionButton (0.2.1)
-  - SnapKit (0.22.0)
+  - FloatingActionButton (1.0)
+  - SnapKit (3.0.2)
 
 DEPENDENCIES:
   - FloatingActionButton (from `../`)
-  - SnapKit (= 0.22.0)
+  - SnapKit (= 3.0.2)
 
 EXTERNAL SOURCES:
   FloatingActionButton:
     :path: ../
 
 SPEC CHECKSUMS:
-  FloatingActionButton: 7ceb63df5a34541e04a1bdf3edb86d1609ac93d9
-  SnapKit: 0dd2fd157330f1ea11fd84da13e6be8a7a22bae0
+  FloatingActionButton: f3c634b791d2a31213e7fdd1ff2ef8f20e99d68b
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 103fe9c06b8d5fdf15687030996e8cbdd9972b15
+PODFILE CHECKSUM: 95fef51e77ade83fbc3cab1089e9873f2db381a4
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.1

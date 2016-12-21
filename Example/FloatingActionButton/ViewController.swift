@@ -13,7 +13,7 @@ import UIKit
 import SnapKit
 import FloatingActionButton
 
-public class CustomCell : FloatingCell {
+open class CustomCell : FloatingCell {
     var name: String = "sample"
     
     init(icon: UIImage, name: String) {
@@ -25,11 +25,11 @@ public class CustomCell : FloatingCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func setupView(view: UIView) {
+    open override func setupView(_ view: UIView) {
         super.setupView(view)
         let label = UILabel()
         label.text = name
-        label.textColor = UIColor.whiteColor()
+        label.textColor = UIColor.white
         label.font = UIFont(name: "Helvetica-Neue", size: 12)
         addSubview(label)
         label.snp_makeConstraints { make in
@@ -40,13 +40,13 @@ public class CustomCell : FloatingCell {
     }
 }
 
-public class CustomDrawingActionButton: FloatingActionButton {
+open class CustomDrawingActionButton: FloatingActionButton {
     
-    override public func createPlusLayer(frame: CGRect) -> CAShapeLayer {
+    override open func createPlusLayer(_ frame: CGRect) -> CAShapeLayer {
         
         let plusLayer = CAShapeLayer()
         plusLayer.lineCap = kCALineCapRound
-        plusLayer.strokeColor = UIColor.whiteColor().CGColor
+        plusLayer.strokeColor = UIColor.white.cgColor
         plusLayer.lineWidth = 3.0
         
         let w = frame.width
@@ -60,11 +60,11 @@ public class CustomDrawingActionButton: FloatingActionButton {
         
         let path = UIBezierPath()
         for (start, end) in points {
-            path.moveToPoint(start)
-            path.addLineToPoint(end)
+            path.move(to: start)
+            path.addLine(to: end)
         }
         
-        plusLayer.path = path.CGPath
+        plusLayer.path = path.cgPath
         
         return plusLayer
     }
@@ -82,9 +82,9 @@ class ViewController: UIViewController, FloatingActionButtonDataSource, Floating
         let createButton: (CGRect, FloatingActionButtonAnimateStyle) -> FloatingActionButton = { (frame, style) in
             let floatingActionButton = CustomDrawingActionButton(frame: frame)
             floatingActionButton.animateStyle = style
-            floatingActionButton.childControlsColor = UIColor.whiteColor();
-            floatingActionButton.childControlsTintColor = UIColor.darkGrayColor();
-            floatingActionButton.childControlsTintColor = UIColor.blackColor()
+            floatingActionButton.childControlsColor = UIColor.white;
+            floatingActionButton.childControlsTintColor = UIColor.darkGray;
+            floatingActionButton.childControlsTintColor = UIColor.black
             floatingActionButton.dataSource = self
             floatingActionButton.delegate = self
             return floatingActionButton
@@ -103,13 +103,13 @@ class ViewController: UIViewController, FloatingActionButtonDataSource, Floating
         cells.append(cellFactory("ic_place"))
         
         let floatingFrame = CGRect(x: self.view.frame.width - 56 - 16, y: self.view.frame.height - 56 - 16, width: 56, height: 56)
-        let bottomRightButton = createButton(floatingFrame, .Up)
+        let bottomRightButton = createButton(floatingFrame, .up)
         
         let image = UIImage(named: "ic_art")
         bottomRightButton.image = image
         
         let floatingFrame2 = CGRect(x: 16, y: 16, width: 56, height: 56)
-        let topLeftButton = createButton(floatingFrame2, .Down)
+        let topLeftButton = createButton(floatingFrame2, .down)
 
         self.view.addSubview(bottomRightButton)
         self.view.addSubview(topLeftButton)
@@ -120,17 +120,16 @@ class ViewController: UIViewController, FloatingActionButtonDataSource, Floating
         // Dispose of any resources that can be recreated.
     }
 
-    func numberOfCells(floatingActionButton: FloatingActionButton) -> Int {
+    func numberOfCells(_ floatingActionButton: FloatingActionButton) -> Int {
         return cells.count
     }
     
-    func cellForIndex(index: Int) -> FloatingCell {
+    func cellForIndex(_ index: Int) -> FloatingCell {
         return cells[index]
     }
-    
-    func liquidFloatingActionButton(floatingActionButton: FloatingActionButton, didSelectItemAtIndex index: Int) {
+  
+    func floatingActionButton(_ floatingActionButton: FloatingActionButton, didSelectItemAtIndex index: Int) {
         print("did Tapped! \(index)")
         floatingActionButton.close()
     }
-
 }

@@ -8,18 +8,18 @@
 
 import UIKit
 
-public class FloatingCell: FloatingCircle {
+open class FloatingCell: FloatingCircle {
     
     let internalRatio: CGFloat = 0.75
     
-    public var responsible = true
-    public var imageView = UIImageView()
+    open var responsible = true
+    open var imageView = UIImageView()
     weak var actionButton: FloatingActionButton?
     
     // for implement responsible color
-    private var originalColor: UIColor
+    fileprivate var originalColor: UIColor
     
-    public override var frame: CGRect {
+    open override var frame: CGRect {
         didSet {
             resizeSubviews()
         }
@@ -38,7 +38,7 @@ public class FloatingCell: FloatingCircle {
     }
     
     public init(icon: UIImage) {
-        self.originalColor = UIColor.clearColor()
+        self.originalColor = UIColor.clear
         super.init()
         setup(icon)
     }
@@ -47,31 +47,31 @@ public class FloatingCell: FloatingCircle {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setup(image: UIImage, tintColor: UIColor = UIColor.whiteColor()) {
-        imageView.image = image.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+    func setup(_ image: UIImage, tintColor: UIColor = UIColor.white) {
+        imageView.image = image.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
         imageView.tintColor = tintColor
         setupView(imageView)
     }
     
-    public func setupView(view: UIView) {
-        userInteractionEnabled = false
+    open func setupView(_ view: UIView) {
+        isUserInteractionEnabled = false
         addSubview(view)
         resizeSubviews()
     }
     
-    private func resizeSubviews() {
+    fileprivate func resizeSubviews() {
         let size = CGSize(width: frame.width * 0.5, height: frame.height * 0.5)
         imageView.frame = CGRect(x: frame.width - frame.width * internalRatio, y: frame.height - frame.height * internalRatio, width: size.width, height: size.height)
     }
     
-    func update(key: CGFloat, open: Bool) {
+    func update(_ key: CGFloat, open: Bool) {
         for subview in self.subviews {
             let ratio = max(2 * (key * key - 0.5), 0)
             subview.alpha = open ? ratio : -ratio
         }
     }
     
-    public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if responsible {
             originalColor = color
             color = originalColor.white(0.5)
@@ -79,14 +79,14 @@ public class FloatingCell: FloatingCircle {
         }
     }
     
-    public override func touchesCancelled(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    open override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
         if responsible {
             color = originalColor
             setNeedsDisplay()
         }
     }
     
-    override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         color = originalColor
         actionButton?.didTappedCell(self)
     }

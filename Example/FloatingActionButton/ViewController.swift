@@ -127,10 +127,9 @@ class ViewController: UIViewController, FloatingActionButtonDataSource, Floating
     func cellForIndex(_ index: Int) -> FloatingCell {
         return cells[index]
     }
-    
-    func liquidFloatingActionButton(_ floatingActionButton: FloatingActionButton, didSelectItemAtIndex index: Int) {
+  
+    func floatingActionButton(_ floatingActionButton: FloatingActionButton, didSelectItemAtIndex index: Int) {
         print("did Tapped! \(index)")
         floatingActionButton.close()
     }
-
 }

@@ -11,6 +11,7 @@
 
 import Foundation
 import QuartzCore
+import DynamicColor
 
 // FloatingButton DataSource methods
 
@@ -179,7 +180,7 @@ open class FloatingActionButton: UIView {
         self.circleLayer.cornerRadius = self.frame.width * 0.5
         self.circleLayer.masksToBounds = true
         if touching && responsible {
-            self.circleLayer.backgroundColor = self.color.white(0.5).cgColor
+            self.circleLayer.backgroundColor = self.color.lighter(amount: 0.5).cgColor
         } else {
             self.circleLayer.backgroundColor = self.color.cgColor
         }

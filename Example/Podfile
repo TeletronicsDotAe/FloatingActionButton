@@ -4,10 +4,11 @@ use_frameworks!
 target 'FloatingActionButton_Example' do
   pod "FloatingActionButton", :path => "../"
   pod "SnapKit", "3.0.2"
+  pod "DynamicColor", "3.2.1"
 end
 
 target 'FloatingActionButton_Tests' do
   pod "FloatingActionButton", :path => "../"
-
+  pod "DynamicColor", "3.2.1"
   
 end

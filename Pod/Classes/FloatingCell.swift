@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DynamicColor
 
 open class FloatingCell: FloatingCircle {
     
@@ -74,7 +75,7 @@ open class FloatingCell: FloatingCircle {
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if responsible {
             originalColor = color
-            color = originalColor.white(0.5)
+            color = originalColor.darkened(amount: 0.5)
             setNeedsDisplay()
         }
     }

@@ -1,8 +1,11 @@
 PODS:
-  - FloatingActionButton (1.0)
+  - DynamicColor (3.2.1)
+  - FloatingActionButton (1.0.1):
+    - DynamicColor (= 3.2.1)
   - SnapKit (3.0.2)
 
 DEPENDENCIES:
+  - DynamicColor (= 3.2.1)
   - FloatingActionButton (from `../`)
   - SnapKit (= 3.0.2)
 
@@ -11,9 +14,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  FloatingActionButton: f3c634b791d2a31213e7fdd1ff2ef8f20e99d68b
+  DynamicColor: 4786d650c69da6c3f2cbfe068348288ec4e5521f
+  FloatingActionButton: dc3a3c45a0308adb50179290db6d6cda518cf64f
   SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
 
-PODFILE CHECKSUM: 95fef51e77ade83fbc3cab1089e9873f2db381a4
+PODFILE CHECKSUM: 6b2ac488f79c4ec5fde1788014c34a02f1cba0fa
 
 COCOAPODS: 1.1.1

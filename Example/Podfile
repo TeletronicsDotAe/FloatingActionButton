@@ -1,14 +1,20 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
+pod "DynamicColor", "4.0.2"
+pod "FloatingActionButton", :path => "../"
+
 target 'FloatingActionButton_Example' do
-  pod "FloatingActionButton", :path => "../"
-  pod "SnapKit", "3.0.2"
-  pod "DynamicColor", "3.2.1"
+  pod "SnapKit", "4.0.0"
 end
 
 target 'FloatingActionButton_Tests' do
-  pod "FloatingActionButton", :path => "../"
-  pod "DynamicColor", "3.2.1"
-  
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['SWIFT_VERSION'] = '4.0'
+        end
+    end
 end

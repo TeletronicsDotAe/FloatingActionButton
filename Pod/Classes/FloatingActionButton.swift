@@ -127,7 +127,7 @@ open class FloatingActionButton: UIView {
 
         // rotate plus icon
         CATransaction.setAnimationDuration(0.8)
-        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(M_PI) * rotationDegrees) / 180, 0, 0, 1)
+        self.plusLayer.transform = CATransform3DMakeRotation((CGFloat(Double.pi) * rotationDegrees) / 180, 0, 0, 1)
 
         let cells = cellArray()
         for cell in cells {
@@ -377,7 +377,7 @@ class CircleBaseView: ActionBarBaseView {
                 firstCell.alpha = alphaColor
             }
             for i in 1 ..< openingCells.count {
-                let prev = openingCells[i - 1]
+//                let prev = openingCells[i - 1]
                 let cell = openingCells[i]
                 cell.alpha = alphaColor
             }
@@ -438,7 +438,7 @@ class CircleBaseView: ActionBarBaseView {
         return -1 * t * (t - 2)
     }
 
-    func didDisplayRefresh(_ displayLink: CADisplayLink) {
+    @objc func didDisplayRefresh(_ displayLink: CADisplayLink) {
         if opening {
             keyDuration += CGFloat(displayLink.duration)
             updateOpen()

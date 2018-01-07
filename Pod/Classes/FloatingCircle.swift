@@ -62,7 +62,7 @@ open class FloatingCircle : UIView {
 
     func drawCircle() {
         let bezierPath = UIBezierPath(ovalIn: CGRect(origin: CGPoint.zero, size: CGSize(width: radius * 2, height: radius * 2)))
-        draw(bezierPath)
+        _ = draw(bezierPath)
     }
 
     func draw(_ path: UIBezierPath) -> CAShapeLayer {
